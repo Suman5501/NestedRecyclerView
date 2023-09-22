@@ -60,6 +60,10 @@ class BillsCategoryAdapter(private val context : Context,
             val imageView  = holder.itemView.findViewById<ImageView>(R.id.image_grid_iv)
             Glide.with(context).load(imagesList[position]).into(imageView)
         }
+
+        holder.itemView.setOnClickListener {
+            details.getDetails(displayData?.name, displayData?.description)
+        }
     }
 
     fun setData(newList: List<CategoryItem>){

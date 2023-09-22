@@ -1,6 +1,7 @@
 package com.example.creddemo.adapter
 
 import android.content.Context
+import android.content.DialogInterface.OnClickListener
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,7 +51,6 @@ class MoneyCategoryAdapter(private val context : Context,
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         val displayData = categoryList[position].displayData
 
-
         if(getItemViewType(position) == LayoutType.LIST_LAYOUT.ordinal){
             holder.itemView.findViewById<TextView>(R.id.description_list_tv).text = displayData?.description
             holder.itemView.findViewById<TextView>(R.id.title_list_tv).text = displayData?.name
@@ -63,8 +63,11 @@ class MoneyCategoryAdapter(private val context : Context,
             val imageView  = holder.itemView.findViewById<ImageView>(R.id.image_grid_iv)
             Glide.with(context).load("https://img.icons8.com/nolan/64/merchant-account.png").into(imageView)
         }
-    }
 
+        holder.itemView.setOnClickListener {
+            details.getDetails(displayData?.name, displayData?.description)
+        }
+    }
     fun setData(newList: List<CategoryItem>){
         categoryList = newList
         notifyDataSetChanged()

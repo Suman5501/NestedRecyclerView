@@ -47,6 +47,7 @@ class CategoryActivity : AppCompatActivity(), CategoryDetails {
         viewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
         val response = viewModel.getCategories()
 
+
         viewModel.response.observe(this, Observer { response ->
             if(response.isSuccessful){
                 val money = response.body()?.data?.get(0)?.sectionProperties?.items

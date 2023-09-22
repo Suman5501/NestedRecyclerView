@@ -48,16 +48,17 @@
 
     <TextView
         android:id="@+id/description_main_tv"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="50dp"
-        android:lines="2"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
         android:textColor="@color/white"
-        android:fontFamily="sans-serif"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_main_tv" />
 

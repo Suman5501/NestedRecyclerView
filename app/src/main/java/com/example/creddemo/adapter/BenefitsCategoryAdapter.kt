@@ -64,7 +64,7 @@ class BenefitsCategoryAdapter(private val context : Context,
         }
 
         holder.itemView.setOnClickListener {
-
+            details.getDetails(displayData?.name, displayData?.description)
         }
     }
 

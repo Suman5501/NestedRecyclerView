@@ -6,7 +6,7 @@
 
         <item name="colorPrimary">#00B64C</item>
         <item name="colorPrimaryVariant">#00B639</item>
-        <item name="colorPrimaryContainer">@color/black</item>
+        <item name="colorPrimaryContainer">#FCEA19</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <item name="colorSecondary">#FCEA19</item>

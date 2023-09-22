@@ -9,14 +9,14 @@
     tools:context=".CategoryActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_main_iv"
         android:layout_width="128dp"
         android:layout_height="137dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="304dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
         android:id="@+id/title_main_tv"
@@ -24,12 +24,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="52dp"
-        android:text="CRED mint"
-        android:textColor="@color/white"
+        android:text="@string/cred_mint"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/image_main_iv" />
 
     <Button
         android:id="@+id/category_btn"
@@ -39,6 +39,7 @@
         android:layout_marginBottom="24dp"
         android:backgroundTint="#E4FFFFFF"
         android:textColor="@color/black"
+        android:text="@string/go_to_category"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,8 +54,8 @@
         android:layout_marginEnd="50dp"
         android:lines="2"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif"
         android:textColor="@color/white"
+        android:fontFamily="sans-serif"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

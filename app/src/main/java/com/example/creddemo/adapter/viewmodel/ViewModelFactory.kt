@@ -1,4 +1,4 @@
-package com.example.creddemo.adapter
+package com.example.creddemo.adapter.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

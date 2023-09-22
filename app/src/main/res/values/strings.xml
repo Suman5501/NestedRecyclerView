@@ -2,4 +2,11 @@
     <string name="app_name">CredDemo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore">explore</string>
+    <string name="cred">CRED</string>
+    <string name="money">MONEY</string>
+        <string name="benefits">BENEFITS</string>
+    <string name="bills">BILLS</string>
+    <string name="go_to_category">Go to Category</string>
+    <string name="cred_mint">CRED</string>
 </resources>

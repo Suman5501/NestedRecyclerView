@@ -1,4 +1,4 @@
-package com.example.creddemo.adapter
+package com.example.creddemo.adapter.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

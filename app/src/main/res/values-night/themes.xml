@@ -2,8 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CredDemo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">@color/black</item>
-        <item name="colorSecondary">@color/white</item>
-        <item name="colorPrimaryContainer">#00CA5B</item>
+
+        <item name="android:windowBackground">@color/black</item>
+
+        <item name="colorPrimary">#00B64C</item>
+        <item name="colorPrimaryVariant">#00B639</item>
+        <item name="colorPrimaryContainer">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">#FCEA19</item>
+        <item name="colorSecondaryVariant">#009688</item>
+        <item name="colorOnSecondary">@color/black</item>
     </style>
 </resources>

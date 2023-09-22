@@ -21,10 +21,12 @@ class BenefitsCategoryAdapter(private val context : Context,
     private var categoryList = emptyList<CategoryItem>()
 
     private val imagesList = arrayListOf<String>(
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png")
+
+        "https://img.icons8.com/external-neu-royyan-wijaya/32/12B886/external-award-neu-game-neu-royyan-wijaya.png" ,
+        "https://img.icons8.com/ios-glyphs/30/12B886/gift--v1.png",
+        "https://img.icons8.com/wired/64/12B886/cheap-2.png",
+        "https://img.icons8.com/ios-glyphs/30/12B886/discount-ticket.png",
+        "https://img.icons8.com/pastel-glyph/64/12B886/sale.png")
 
     inner class CustomViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     }
@@ -54,12 +56,12 @@ class BenefitsCategoryAdapter(private val context : Context,
             holder.itemView.findViewById<TextView>(R.id.title_list_tv).text = displayData?.name
 
             val imageView  = holder.itemView.findViewById<ImageView>(R.id.image_list_iv)
-            Glide.with(context).load("https://img.icons8.com/nolan/64/merchant-account.png").into(imageView)
+            Glide.with(context).load(imagesList[position]).into(imageView)
         }else {
             holder.itemView.findViewById<TextView>(R.id.title_grid_tv).text = displayData?.name
 
             val imageView = holder.itemView.findViewById<ImageView>(R.id.image_grid_iv)
-            Glide.with(context).load("https://img.icons8.com/nolan/64/merchant-account.png")
+            Glide.with(context).load(imagesList[position])
                 .into(imageView)
         }
 

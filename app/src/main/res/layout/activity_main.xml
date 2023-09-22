@@ -16,7 +16,7 @@
         android:layout_marginTop="304dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/cred" />
 
     <TextView
         android:id="@+id/title_main_tv"
@@ -31,20 +31,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_main_iv" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/category_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
         android:layout_marginBottom="24dp"
+        app:cornerRadius="5dp"
+        android:drawableEnd="@drawable/icon_right_arrow"
         android:backgroundTint="#E4FFFFFF"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:text="@string/go_to_category"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description_main_tv"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0">
+
+    </com.google.android.material.button.MaterialButton>
 
     <TextView
         android:id="@+id/description_main_tv"

@@ -21,10 +21,9 @@ class BillsCategoryAdapter(private val context : Context,
     private var categoryList = emptyList<CategoryItem>()
 
     private val imagesList = arrayListOf<String>(
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png")
+        "https://img.icons8.com/pastel-glyph/64/12B886/stack-of-money--v2.png",
+        "https://img.icons8.com/glyph-neue/64/12B886/sell-property.png",
+        "https://img.icons8.com/ios/50/12B886/book-and-pencil.png")
 
     inner class CustomViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     }

@@ -1,7 +1,6 @@
 package com.example.creddemo.adapter
 
 import android.content.Context
-import android.content.DialogInterface.OnClickListener
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,11 +21,10 @@ class MoneyCategoryAdapter(private val context : Context,
     private var categoryList = emptyList<CategoryItem>()
 
     private val imagesList = arrayListOf<String>(
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png",
-        "https://img.icons8.com/nolan/64/merchant-account.png")
-
+        "https://img.icons8.com/ios/50/12B886/initiate-money-transfer.png",
+        "https://img.icons8.com/material-outlined/24/12B886/bank-account.png",
+        "https://img.icons8.com/windows/32/12B886/qr-code.png"
+    )
 
     inner class CustomViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     }
@@ -56,12 +54,13 @@ class MoneyCategoryAdapter(private val context : Context,
             holder.itemView.findViewById<TextView>(R.id.title_list_tv).text = displayData?.name
 
             val imageView  = holder.itemView.findViewById<ImageView>(R.id.image_list_iv)
-            Glide.with(context).load("https://img.icons8.com/nolan/64/merchant-account.png").into(imageView)
+            Glide.with(context).load(imagesList[position]).into(imageView)
+
         }else{
             holder.itemView.findViewById<TextView>(R.id.title_grid_tv).text = displayData?.name
 
             val imageView  = holder.itemView.findViewById<ImageView>(R.id.image_grid_iv)
-            Glide.with(context).load("https://img.icons8.com/nolan/64/merchant-account.png").into(imageView)
+            Glide.with(context).load(imagesList[position]).into(imageView)
         }
 
         holder.itemView.setOnClickListener {
